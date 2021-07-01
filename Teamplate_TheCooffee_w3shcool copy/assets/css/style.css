@@ -1,0 +1,289 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 
+1. Tu ngoai vao trong
+2. Tu tren xuong duoi
+3. Tong quan den chi tiet */
+/* 
+1.Vi tri
+2.Kich thuoc(w,h)
+3.Mau sac
+4.Kieu dang
+ */
+html {
+  scroll-behavior: smooth;
+  font-family: Inconsolata;
+}
+/* Common */
+.clear {
+  clear: both;
+}
+.pull-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-3 {
+  width: 33.33333%;
+}
+.col-12 {
+  width: 100%;
+}
+.col-2 {
+  width: 50%;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mt-32 {
+  margin-top: 32px !important;
+}
+/* Common */
+
+/* MAIN */
+#main {
+}
+/* MAIN */
+
+/* HEADER */
+#header {
+  height: 54px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+#header .nav {
+  list-style: none;
+}
+#header ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 14.6px 0;
+  flex-wrap: nowrap;
+}
+
+#header li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 10.4px 95.1px;
+  position: fixed;
+}
+#header .nav ul li a:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+/* HEADER */
+
+/* SLIDER*/
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/assets/img/coffeehouse.jpeg") top center/cover no-repeat;
+}
+#slider .slider_title_main {
+  text-align: center;
+  font-size: 90px;
+  color: #fff;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  left: 0;
+  line-height: 1.5;
+}
+#slider .slider_tiltle {
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 0 0 1 #000;
+  padding: 12px 24px;
+  bottom: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+#slider .slider_tiltle--backgroud {
+  background-color: #000;
+  padding: 1px 6px;
+}
+/* SLIDER*/
+
+/* CONTENT */
+#content {
+}
+
+#content .content_section {
+  padding: 32px 0 112px;
+  width: 700px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .section_heading {
+  font-size: 24px;
+  color: #fff;
+  padding: 64px 0;
+  text-align: center;
+}
+#content .section_heading_detail {
+  background-color: #000;
+  font-weight: 400;
+}
+#content .section_about {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+#content .section_pharaphrase {
+  background-color: #ccc;
+  opacity: 0.6;
+  margin-top: 16px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  border-left: 6px solid #000;
+  padding: 0px 17px;
+}
+#content .section_pharaphrase_1 {
+  font-style: italic;
+  padding: 18px 0px 16px 16px;
+}
+#content .section_pharaphrase_2 {
+
+  padding: 0 16px;
+  padding-bottom: 16px;
+}
+#content .section_img{
+  padding: 16px 0;
+   
+  max-width: 700px;
+}
+#content .section_img .img{
+  padding: 16px 0;
+  width: 100%;
+  
+ 
+}
+#content .nav{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #000;
+  padding: 12px 0;
+  position: relative;
+}
+#content .nav a{
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  padding: 11px 143px;
+ 
+}
+#content .nav a:hover{
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+#content .subnav_1{
+  list-style: none;
+  position: absolute;
+  margin: 12px 12px -10px -1.8px;
+  border: 1px solid #000;
+  display: block;
+}
+#content li:hover .subnav_1 {
+  display: block;
+}
+#content .subnav_1_text{
+  font-size: 24px;
+  text-align: left;
+  padding: 16px 4px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: -2px 14px;
+}
+#content .subnav_1_text_2{
+ color: gray;
+ opacity: 0.6;
+}
+#content .subnav_2{
+  list-style: none;
+  position: absolute;
+  margin: 12px 12px -10px -1.8px;
+  
+  border: 1px solid #000;
+  display: none;
+}
+#content li:hover .subnav_2 {
+  display: block;
+}
+
+#content .section_where_text{
+  text-align: left;
+  font-size: 18px;
+  padding: 16px 0;
+  line-height: 1.4;
+}
+ #content .section_where_text--special{
+  background-color: #000;
+  color: #fff;
+  padding: 5px 8px;
+}
+ #content .where_form-control{
+padding: 21px ;
+width: 100%;
+border: 1px solid #000;
+opacity: 0.5;
+ }
+#content .where_btn{
+  color: #fff;
+    background-color: #000;
+    padding: 12px 0;
+    font-size: 16px;
+    border: none;
+} 
+#content .where_btn:hover{
+  background-color: #ccc;
+  cursor: pointer;
+}
+/* CONTENT */
+
+/* FOOTER */
+#footer {
+  height: 151px;
+}
+#footer .footer_text{
+  text-align: center;
+  font-size: 18px;
+height: 27px;
+}
+/* FOOTER */

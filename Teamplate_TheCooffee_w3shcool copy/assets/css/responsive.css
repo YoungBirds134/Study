@@ -1,0 +1,48 @@
+/* PC */
+@media(max-width:64em){
+   
+}
+/* Tablet & Mobile */
+@media(max-width:63.9375em){
+    #slider .slider_title_main {
+        text-align: center;
+    font-size: 90px;
+    color: #fff;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+    line-height: 1.5;
+    }
+    #header li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+        padding: 10.4px 95.1px;
+        position: fixed;
+        padding: 0px 1px;
+    }
+}
+/* Tablet & Mobile */
+
+/* Tablet */
+@media(min-width:46.25em)and(max-width:63.9375em){
+   
+}
+/* Tablet */
+
+/* Mobile */
+@media(max-width:46.1875em){
+   
+    #header li a {
+  
+    margin-left: -64px;
+    padding: 11.4px 29.1px;
+
+}
+#header{
+  
+}
+    
+}

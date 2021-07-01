@@ -1,0 +1,367 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 
+1. Tu ngoai vao trong
+2. Tu tren xuong duoi
+3. Tong quan den chi tiet */
+/* 
+1.Vi tri
+2.Kich thuoc(w,h)
+3.Mau sac
+4.Kieu dang
+ */
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Common */
+.clear {
+  clear: both;
+}
+.pull-right {
+  float: right;
+}
+.btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10.9px 16.8px;
+  display: inline-block;
+  margin-top: 10px;
+  border: none;
+  text-align: center;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #ccc;
+}
+.text-center {
+  text-align: center !important;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-3 {
+  width: 33.33333%;
+}
+.col-12 {
+  width: 100%;
+}
+.col-2 {
+  width: 50%;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mt-32 {
+  margin-top: 32px !important;
+}
+/* Common */
+
+/* Main */
+#main {
+}
+
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style: none;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+#nav > li > a {
+  color: aliceblue;
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+#nav li:hover a {
+}
+#nav .subnav {
+  display: none;
+
+  min-width: 160px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+  top: 100%;
+}
+#nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+#nav .subnav li:hover a {
+  background-color: #ccc;
+  color: #000;
+}
+#header {
+  height: 46px;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+#header .mobile-menu-button {
+  float: right;
+  padding: 0 21px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#header .search-button {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .mobile-menu-button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+#header .search-button:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+#header .menu-icon,
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+/* End Header */
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/assets/img/chicago.jpeg") top center/cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+  text-shadow: 0 0 1 #000;
+}
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+  text-shadow: 2 0 3 #000;
+}
+
+/* End Slider */
+#content {
+}
+
+#content .content-section {
+  width: 800px;
+  max-width: 100%;
+  padding: 64px 0 112px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* margin-top: 20px; */
+}
+#content .section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 4px;
+}
+#content .section-sub-heading {
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: center;
+  opacity: 0.6;
+  font-style: italic;
+}
+#content .about-text {
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+#content .member-lists {
+  padding-top: 32px;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+#content .member-img {
+  width: 154px;
+  /* padding-top: 15px; */
+  border-radius: 4px;
+}
+/* Selection Tour */
+.text-white {
+  color: #fff !important;
+}
+.content-section-background {
+  background-color: #000;
+}
+.ticket-lists {
+  background-color: #fff;
+  margin-top: 40px;
+  list-style: none;
+}
+.ticket-lists li {
+  font-size: 15px;
+  padding: 8px 16px;
+  color: gray;
+  border-bottom: 1px solid #ddd;
+}
+.ticket-lists .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 3.9px 4.7px;
+  margin-left: 24.5px;
+}
+.ticket-lists .sold-quanity {
+  float: right;
+  background-color: #000;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -2px;
+}
+
+/* End Selection Tour */
+
+/* Place Tour */
+.place-list {
+  margin-top: 16px;
+}
+.place-item {
+}
+
+.place-img {
+  display: block;
+  width: 100%;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+.place-date {
+  margin-top: 15px;
+  color: #ccc;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 550;
+}
+.place-description {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+/* Place Tour */
+/* ConTact */
+.content-contact {
+  margin-top: 48px;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+.contact-form .form-control {
+  padding: 10.5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+/* <!-- Map Section --> */
+
+/* <!-- Map Section --> */
+.map-section img {
+  width: 100%;
+}
+
+/* End Content */
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .social-lists {
+  font-size: 24px;
+}
+#footer .social-lists a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .coppyright a:hover,
+#footer .social-lists a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+#footer .coppyright {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
+#footer .coppyright a {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
